@@ -468,3 +468,8 @@ blockquote:last-child {
 		padding-left: 25px;
 	}
 }
+/*
+去除多说powered*/
+.ds-powered-by{
+	display: none;
+}
