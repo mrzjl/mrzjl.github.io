@@ -500,3 +500,9 @@ hr{
 .hljs{
 	background:#505050!important;
 }
+#ds-thread #ds-reset .ds-textarea-wrapper{
+	border: 1px solid #FFF!important;
+}
+#ds-thread #ds-reset li.ds-tab a {
+    text-shadow: none!important;
+ }
