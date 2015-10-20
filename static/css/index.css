@@ -147,6 +147,7 @@ nav{
 	-moz-transition:0.4s ease;
 	-o-transition:0.4s ease;
 }
+/*
 .categories-list-item:hover .my-badge{
 	-webkit-transform:rotate(360deg) scale(1.2);
 	-moz-transform:rotate(360deg) scale(1.2);
@@ -154,7 +155,7 @@ nav{
 	-ms-transform:rotate(360deg) scale(1.2);
 	transform:rotate(360deg) scale(1.2);
 }
-
+*/
 /* shadow */
 .shadow-corner-curl{
 	
