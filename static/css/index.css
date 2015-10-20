@@ -513,3 +513,6 @@ hr{
 #ds-thread #ds-reset li.ds-tab a {
     text-shadow: none!important;
  }
+ #ds-thread #ds-reset .ds-post-options {
+     border: 1px solid #fff!important;
+ }
