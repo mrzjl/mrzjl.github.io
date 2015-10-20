@@ -1,8 +1,3 @@
----
-title: Demo
-permalink: /waterfall/
-icon: glyphicon-play
----
 <!DOCTYPE html>
 <html>
 <head>
@@ -45,7 +40,7 @@ icon: glyphicon-play
 			function watercoming(){
 				for(i=0;i<20;i++){
 					a[i] = document.createElement("div");
-					a[i].className="div" + i;
+					a[i].id="div" + i;
 					var h = Math.floor((Math.random()*200+100));
 					var html="<div style='height:"+ h +"px;background-color:rgb("+ Math.floor(Math.random()*255) + "," + Math.floor(Math.random()*255) + "," + Math.floor(Math.random()*255) + ");'></div>";
 					a[i].innerHTML=html;
