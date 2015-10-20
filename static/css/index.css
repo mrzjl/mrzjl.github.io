@@ -3,7 +3,7 @@
  */
 /* commom */
 body {
-	background-image: url(http://7q5cdt.com1.z0.glb.clouddn.com/bg-canvas_bg.jpg);
+	background-color: #ccc ;
     font-family: 'Microsoft YaHei', 'SimHei', sans-serif;
 }
 article p{
@@ -472,4 +472,22 @@ blockquote:last-child {
 去除多说powered*/
 .ds-powered-by{
 	display: none;
+}
+/*
+demo页*/
+.demo-item{
+	margin: 10px;
+	padding: 10px;
+	width: 300px;
+	border-radius: 2px;
+	box-shadow: 0px 0px 3px 1px #888;
+	float: left;
+	background-color: #fff;
+}
+.demo-item:hover{
+	box-shadow: 0px 0px 3px 3px #fff;
+}
+.demo-item a img {
+	width: 100%;
+	height: auto;
 }
