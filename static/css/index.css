@@ -131,12 +131,8 @@ table td{
 	color: #fff;
 	background-color: #999;
 	padding: 0 7px 1px 7px;
-	border-radius: 9px;
+	border-radius: 2px;
 	float: right;
-	transition:0.4s ease;
-	-webkit-transition:0.4s ease;
-	-moz-transition:0.4s ease;
-	-o-transition:0.4s ease;
 }
 /*
 .categories-list-item:hover .my-badge{
@@ -149,56 +145,9 @@ table td{
 */
 /* shadow */
 .shadow-corner-curl{
-	
 	position: relative;
 	background-color:rgba(220,220,220,0.8); 
 }
-/*
-.shadow-corner-curl:before{
-	content:"";
-	position: absolute;
-	z-index: -5;
-	width: 70%;
-	height:70%;
-	left: 9%;
-	bottom: 2%;
-	background: transparent;
-	-webkit-box-shadow: 0 8px 20px rgba(0,0,0,0.6);
-	-moz-box-shadow: 0 8px 20px rgba(0,0,0,0.6);
-	-o-box-shadow: 0 8px 20px rgba(0,0,0,0.6);
-	box-shadow: 0 8px 20px rgba(0,0,0,0.6);
-*/
-	/* 向左倾斜12度，再旋转4度 */
-	/*
-	-webkit-transform:skew(-11deg) rotate(-4deg);
-	-moz-transform:skew(-11deg) rotate(-4deg);
-	-o-transform:skew(-11deg) rotate(-4deg);
-	-ms-transform:skew(-11deg) rotate(-4deg);
-	transform:skew(-11deg) rotate(-4deg);
-}
-.shadow-corner-curl:after{
-	content:"";
-	position: absolute;
-	z-index: -5;
-	width: 70%;
-	height:70%;
-	right: 9%;
-	bottom: 2%;
-	background: transparent;
-	-webkit-box-shadow: 0 8px 20px rgba(0,0,0,0.6);
-	-moz-box-shadow: 0 8px 20px rgba(0,0,0,0.6);
-	-o-box-shadow: 0 8px 20px rgba(0,0,0,0.6);
-	box-shadow: 0 8px 20px rgba(0,0,0,0.6);
-*/
-	/* 向左倾斜12度，再旋转4度 */
-	/*
-	-webkit-transform:skew(11deg) rotate(4deg);
-	-moz-transform:skew(11deg) rotate(4deg);
-	-o-transform:skew(11deg) rotate(4deg);
-	-ms-transform:skew(11deg) rotate(4deg);
-	transform:skew(11deg) rotate(4deg);
-}
-*/
 /* footer */
 footer{
 	min-height: 50px;
