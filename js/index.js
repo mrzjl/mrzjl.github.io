@@ -25,6 +25,7 @@ function generateContent() {
 function sidebarShow(){
     $("#menu-icon").click(function(){
         $(".secondary:first").toggleClass("show-sidebar");
+        return false;
     });
 }
 
