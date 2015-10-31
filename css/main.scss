@@ -21,7 +21,7 @@ $small-font-size:         $base-font-size * 0.875;
 $base-line-height:        1.5;
 $spacing-unit:            30px;
 $theme-color:             #cc3366;//#cc3366红色//#20b2aa绿色//
-$theme-color-light:       lighten($theme-color, 30%);
+$theme-color-light:       lighten($theme-color, 20%);
 $theme-color-dark:        darken($theme-color, 10%);
 $site-title-color:        #fff;
 $site-decription-color:   darken($site-title-color, 5%);
