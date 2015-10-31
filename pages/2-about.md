@@ -5,7 +5,7 @@ permalink: /about/
 icon: about
 ---
 
-为什么我还没有offer！！
-求带走>_<
+发现 & 感想
+---
 
 [zhangjialecn@gmail.com](mailto:zhangjialecn@gmail.com)
