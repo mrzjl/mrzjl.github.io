@@ -468,6 +468,9 @@
         -webkit-transition:color 200ms,background-color 200ms;
         text-decoration: none;
     }
+    &:visited{
+        color: $section-color-light;
+    }
 }
 
 #contact{
