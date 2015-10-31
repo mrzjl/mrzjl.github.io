@@ -1,6 +1,5 @@
 $(document).ready(function() {
     generateContent();
-    categoryDisplay();
     sidebarShow();
 })
 
@@ -8,10 +7,7 @@ $(document).ready(function() {
  * 侧边目录
  */
 function generateContent() {
-
-    // console.log($('#markdown-toc').html());
     if (typeof $('#markdown-toc').html() === 'undefined') {
-        // $('#content .content-text').html('<ul><li>文本较短，暂无目录</li></ul>');
         $('#content').remove();
     } else {
         $('#content .content-text').html('<ul>' + $('#markdown-toc').html() + '</ul>');
@@ -19,7 +15,6 @@ function generateContent() {
         $('#markdown-toc').remove();
         /* 移除原来的目录 */
     }
-    console.log("myAffix!!!");
 }
 
 function sidebarShow(){

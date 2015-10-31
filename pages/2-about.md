@@ -8,4 +8,4 @@ icon: about
 为什么我还没有offer！！
 求带走>_<
 
-[zhangjialecn@gmail.com](zhangjialecn@gmail.com)
+[zhangjialecn@gmail.com](mailto:zhangjialecn@gmail.com)

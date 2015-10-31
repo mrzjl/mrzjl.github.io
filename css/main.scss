@@ -15,36 +15,46 @@
 
 
 // Our variables
-$base-font-family: "Source Sans Pro","微软雅黑",Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$base-font-family:        "Source Sans Pro","微软雅黑",Helvetica, Arial, sans-serif;
+$base-font-size:          16px;
+$small-font-size:         $base-font-size * 0.875;
+$base-line-height:        1.5;
 
-$spacing-unit:     30px;
+$spacing-unit:            30px;
 
-$theme-color:      #cc3366;//#20b2aa;
-$theme-color-light: lighten($theme-color, 20%);
-$theme-color-dark: darken($theme-color, 10%);
-$site-title-color: #fff;
+$theme-color:             #cc3366;//#20b2aa;
+$theme-color-light:       lighten($theme-color, 20%);
+$theme-color-dark:        darken($theme-color, 10%);
+$site-title-color:        #fff;
 $site-decription-color:   darken($site-title-color, 5%);
-$site-nav-color:    darken($site-title-color, 1%);
-$post-title-color:  #000;
-$text-color:       #111;
-$background-color: #f9f9f9;
-$content-background: #fff;
-$brand-color:      #303030;
-$site-footer-color: #eee;
+$site-nav-color:          darken($site-title-color, 1%);
+$post-title-color:        #000;
+$text-color:              #111;
+$background-color:        #f9f9f9;
+$content-background:      #fff;
+$brand-color:             #303030;
+$site-footer-color:       #eee;
+$sidebar-color:           #fff;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$section-bgcolor:           #fcfcfc;
+$section-border-color:      #f0f0f0;
+$section-border-color-dark: darken($section-border-color, 10%);
+$section-color:             #555;
+$section-color-light:       lighten($section-color, 30%);
+$section-color-hover:       #fff;
+$section-disabled-bgcolor:  darken($section-bgcolor, 5%);
+$section-divide-color:      #eee;
+
+$grey-color:              #828282;
+$grey-color-light:        lighten($grey-color, 40%);
+$grey-color-dark:         darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    1280px;
+$content-width:           1280px;
 
-$on-palm:          800px;
-$on-laptop:        1024px;
-$on-laptop-widescreen:        1280px;
+$on-palm:                 800px;
+$on-laptop:               1024px;
+$on-laptop-widescreen:    1280px;
 
 
 
