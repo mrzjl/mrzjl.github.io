@@ -302,6 +302,7 @@
     margin-top: 2 * $spacing-unit;
     width: 100%;
     text-align: center;
+    display: block!important;
     .pagination{
         list-style-type: none;
         display: inline-block;
