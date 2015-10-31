@@ -3,20 +3,26 @@ $(document).ready(function() {
     sidebarShow();
 })
 
+function generateContent() {
+    var h = $("h1,h2,h3,h4,h5,h6",".primary .post-content");
+    for(var i=0;i<h.length;i++){
+        $(h[i]).before("<a name='link" + i +"'></a>");
+        $("<li><a href='#link" + i + "'></a></li>").appendTo("#content .content-text");
+        $(h[i]).clone().appendTo("#content .content-text li:last a");
+    }
+}
+
 /**
  * 侧边目录
- */
 function generateContent() {
     if (typeof $('#markdown-toc').html() === 'undefined') {
         $('#content').remove();
     } else {
         $('#content .content-text').html('<ul>' + $('#markdown-toc').html() + '</ul>');
-        /*   //数据加载完成后，加固定边栏*/
         $('#markdown-toc').remove();
-        /* 移除原来的目录 */
     }
 }
-
+*/
 function sidebarShow(){
     $("#menu-icon").click(function(){
         $(".secondary:first").toggleClass("show-sidebar");
