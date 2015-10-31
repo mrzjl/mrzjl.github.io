@@ -1,0 +1,69 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+//font octicons
+@font-face {
+  font-family: 'octicons';
+  src: url('../../fonts/octicons.eot'); /* IE9 Compat Modes */
+  src: url('../../fonts/octicons.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../fonts/octicons.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../../fonts/octicons.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../../fonts/octicons.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+
+// Our variables
+$base-font-family: "Source Sans Pro","微软雅黑",Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$theme-color:      #cc3366;//#20b2aa;
+$site-title-color: #fff;
+$site-decription-color:   darken($site-title-color, 5%);
+$site-nav-color:    darken($site-title-color, 1%);
+$post-title-color:  #000;
+$text-color:       #111;
+$background-color: #f9f9f9;
+$content-background: #fff;
+$brand-color:      #303030;
+$site-footer-color: #eee;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    1280px;
+
+$on-palm:          800px;
+$on-laptop:        1024px;
+$on-laptop-widescreen:        1280px;
+
+
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting"
+;
