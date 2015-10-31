@@ -23,6 +23,8 @@ $base-line-height: 1.5;
 $spacing-unit:     30px;
 
 $theme-color:      #cc3366;//#20b2aa;
+$theme-color-light: lighten($theme-color, 20%);
+$theme-color-dark: darken($theme-color, 10%);
 $site-title-color: #fff;
 $site-decription-color:   darken($site-title-color, 5%);
 $site-nav-color:    darken($site-title-color, 1%);
