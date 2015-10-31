@@ -121,15 +121,12 @@
             &:before{
                 content: "\F05E";
             }
-            &:hover{
-                text-decoration:none;
-                color:$site-nav-color;
-                    &:before{
-                        content: "\F061";
-                    }
-            }
             &:visited{
                 color:$site-nav-color;
+            }
+            &:hover{
+                text-decoration:none;
+                color:$theme-color-light;
             }
         }
 
