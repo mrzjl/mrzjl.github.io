@@ -108,7 +108,7 @@ function searchPost(){
     $("#searchbox > input").change(function(){
         var count=0;
         if(this.value){
-            $(".search-results").slideUp(200);
+            $(".search-results").slideUp(100);
             $(".search-results").empty();
             for(var i=0;i<allPost.length;i++){
                 if(allPost[i].innerHTML.match(this.value)){
@@ -117,13 +117,13 @@ function searchPost(){
                 }
             }
             if(count>0){
-                $(".search-results").slideDown(200);
+                $(".search-results").slideDown(100);
             }
         }
     });
     
     $("#searchbox > input").blur(function(){
-        $(".search-results").slideUp(200);
+        $(".search-results").slideUp(100);
     });
 
     $("#searchbox > input").focus(function(){
@@ -137,7 +137,7 @@ function searchPost(){
                 }
             }
             if(count>0){
-                $(".search-results").slideDown(200);
+                $(".search-results").slideDown(100);
             }
         }
     });
