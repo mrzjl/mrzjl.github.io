@@ -4,6 +4,7 @@ $(document).ready(function() {
     smoothScroll();
     cateDisplay();
     scrollToTop();
+    searchPost();
 })
 
 
@@ -101,4 +102,43 @@ function sidebarShow(){
 
 }
 
-/*站内搜索功能*/
+/*post检索功能*/
+function searchPost(){
+    var allPost=$("#categories ul li:first ul li");
+    $("#searchbox > input").change(function(){
+        var count=0;
+        if(this.value){
+            $(".search-results").slideUp(200);
+            $(".search-results").empty();
+            for(var i=0;i<allPost.length;i++){
+                if(allPost[i].innerHTML.match(this.value)){
+                    $(allPost[i]).clone().appendTo($(".search-results"));
+                    count += 1;
+                }
+            }
+            if(count>0){
+                $(".search-results").slideDown(200);
+            }
+        }
+    });
+    
+    $("#searchbox > input").blur(function(){
+        $(".search-results").slideUp(200);
+    });
+
+    $("#searchbox > input").focus(function(){
+        var count=0;
+        if(this.value){
+            $(".search-results").empty();
+            for(var i=0;i<allPost.length;i++){
+                if(allPost[i].innerHTML.match(this.value)){
+                    $(allPost[i]).clone().appendTo($(".search-results"));
+                    count += 1;
+                }
+            }
+            if(count>0){
+                $(".search-results").slideDown(200);
+            }
+        }
+    });
+}

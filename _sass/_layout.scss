@@ -463,8 +463,9 @@
         -moz-box-sizing:border-box;
         -webkit-box-sizing:border-box;
         position: absolute;
+        z-index: 200;
         top:55px;
-        background-color: $sidebar-color;
+        background-color: $section-bgcolor;
         width: 100%;
         border:solid 1px $section-border-color-dark;
         border-radius:3px;
@@ -472,6 +473,9 @@
         max-height: 15em;
         overflow: auto;
         display: none;
+        &::-webkit-scrollbar{
+            display: none;
+        }
     }
 }
 #recent-posts{
