@@ -100,3 +100,5 @@ function sidebarShow(){
     });
 
 }
+
+/*站内搜索功能*/
