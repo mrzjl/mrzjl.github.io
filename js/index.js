@@ -35,12 +35,18 @@ function smoothScroll(){
     });
 }
 
-
-/*categories*/
+/*点击categories时展开post分类列表*/
 function cateDisplay(){
-    var cate=$("#categories > ul > li");
+    var cate=$(".cat-item");
     cate.click(function(){
-        $("ul",this).css("display") == "block" ? $("ul",this).slideUp(200) : $("ul",this).slideDown(200);
+        /*这是什么鬼？
+        for(var kk in this){
+            console.log(kk);
+            console.log(this[kk]);
+        }
+        */
+        var catePostList=$(this.nextElementSibling);
+        catePostList.css("display") == "block" ? catePostList.slideUp(200) : catePostList.slideDown(200);
         return false;
     });
 }
