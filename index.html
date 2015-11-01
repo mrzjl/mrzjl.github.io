@@ -124,7 +124,7 @@ layout: default
         <h2 class="widget-title">CATEGORIES</h2>
         <ul>
             <li>
-                <a href="#" class="cat-item" cate="All">
+                <a href="" class="cat-item" cate="All">
                     All&nbsp;<span class="categories-badge"> {{site.posts | size}}</span>
                 </a>
 
@@ -139,7 +139,7 @@ layout: default
 
             {% for category in site.categories %}
             <li>
-                <a href="#" class="cat-item" cate="{{ category | first }}">
+                <a href="" class="cat-item" cate="{{ category | first }}">
                     {{ category | first }}&nbsp;<span class="categories-badge">{{ category | last | size }}</span>
                 </a>
 

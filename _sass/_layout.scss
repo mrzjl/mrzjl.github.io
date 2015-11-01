@@ -510,12 +510,16 @@
         li{
             ul{
                 padding:$spacing-unit;
+                margin-top: 5px;
                 background-color:$section-bgcolor;
                 border-radius:3px;
                 border:solid 1px $section-border-color;
                 max-height: 300px;
                 overflow: auto;
                 display: none;
+                &::-webkit-scrollbar{
+                    display: none;
+                }
             }
         }
     }

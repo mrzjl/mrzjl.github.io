@@ -1,8 +1,8 @@
 $(document).ready(function() {
-    cateDisplay();
     generateContent();
     sidebarShow();
     smoothScroll();
+    cateDisplay();
     scrollToTop();
 })
 
@@ -78,13 +78,11 @@ function sidebarShow(){
         }else{
                 $(".secondary").css("right","0");            
         }
-        return false;
     });
 
-    /*点击侧栏内链接时隐藏侧栏*/
-    $("a",sec).click(function(){
-        var notURL=new RegExp("\#$");//判断是否为锚链接
-        if(( $("#menu-icon").css("display") == "block" ) && !(notURL.test(this))){
+    /*点击侧栏内链接时隐藏侧栏,单击cat-item时不隐藏*/
+    $("a:not(.cat-item)",sec).click(function(){
+        if( $("#menu-icon").css("display") == "block" ){
             $(".secondary").css("right","-"+secWidth);
         }
     });
