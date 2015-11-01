@@ -2,7 +2,7 @@
 title: Jiale's Blog
 icon:	/images/site.ico
 email: zhangjialecn@gmail.com
-description: Front-end Dev
+#description: Front-end Dev
 #baseurl: "" # the subpath of your site, e.g. /blog/
 #url: "http://yourdomain.com" # the base hostname & protocol for your site
 github_username:  mr-jiale
