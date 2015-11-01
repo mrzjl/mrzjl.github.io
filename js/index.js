@@ -1,8 +1,11 @@
 $(document).ready(function() {
     generateContent();
     sidebarShow();
+    smoothScroll();
 })
 
+
+/*生成目录*/
 function generateContent() {
     var h = $("h1,h2,h3,h4,h5,h6",".primary .post-content");
     for(var i=0;i<h.length;i++){
@@ -12,17 +15,26 @@ function generateContent() {
     }
 }
 
-/**
- * 侧边目录
-function generateContent() {
-    if (typeof $('#markdown-toc').html() === 'undefined') {
-        $('#content').remove();
-    } else {
-        $('#content .content-text').html('<ul>' + $('#markdown-toc').html() + '</ul>');
-        $('#markdown-toc').remove();
-    }
+/*锚链接平滑滚动*/
+function smoothScroll(){   
+    $('a[href*=#],area[href*=#]').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top - 56;
+                $('html,body').animate({
+                    scrollTop: targetOffset
+                },
+                500);
+                return false;
+            }
+        }
+    });
 }
-*/
+
+
+/*点击菜单键显示栏*/
 function sidebarShow(){
     $("#menu-icon").click(function(){
         $(".secondary:first").toggleClass("show-sidebar");
