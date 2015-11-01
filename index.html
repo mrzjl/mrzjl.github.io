@@ -127,16 +127,30 @@ layout: default
                 <a href="#" class="cat-item" cate="All">
                     All&nbsp;<span class="categories-badge"> {{site.posts | size}}</span>
                 </a>
+
+                <ul>
+                  {% for post in site.posts %}
+                    <li>
+                        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    </li>
+                  {% endfor %}
+                </ul>
             </li>
 
             {% for category in site.categories %}
-
             <li>
                 <a href="#" class="cat-item" cate="{{ category | first }}">
                     {{ category | first }}&nbsp;<span class="categories-badge">{{ category | last | size }}</span>
                 </a>
-            </li>
 
+                <ul>
+                {% for posts in category %}
+                  {% for post in posts %}
+                    <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+                  {% endfor %}
+                {% endfor %}
+                </ul>
+            </li>
             {% endfor %}
         </ul>
     </aside>

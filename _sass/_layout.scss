@@ -22,12 +22,12 @@
     font-size: 2.25em;
     font-weight: 900;
     color: $site-title-color;
+    &:visited {
+        color: $site-title-color;
+    }
     &:hover {
         color: $site-title-color;
         text-decoration: none;
-    }
-    &:visited {
-        color: $site-title-color;
     }
 }
 .site-description{
@@ -127,6 +127,7 @@
             &:hover{
                 text-decoration:none;
                 color:$theme-color-light;
+                cursor: pointer;
             }
         }
 
@@ -148,6 +149,33 @@
     line-height: 48px;
     text-align: center;
 }
+
+#scroll-to-top{
+    display: none;
+    position:fixed;
+    right: $spacing-unit;
+    bottom: $spacing-unit;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    border-radius:5px;
+    background-color:$theme-color;
+    opacity: 0.4;
+    &:before{
+        content: "\F03D";
+        font-family: "octicons";
+        font-size: 48px;
+        line-height: 48px;
+        color: $section-color-hover;
+    }
+    &:hover{
+        box-shadow:0 0 10px 0px $theme-color;
+        opacity: 0.8;
+        cursor: pointer;
+    }
+}
+
+
 
 /**
  * Page content
@@ -199,11 +227,10 @@
         -o-transition:right 300ms;
         -webkit-transition:right 300ms;
         border-left:solid 1px $section-border-color;
+        &::-webkit-scrollbar {
+            display:none
+        }
     }
-}
-
-.show-sidebar{
-    right: 0!important;
 }
 
 .post-entry{
@@ -241,7 +268,7 @@
         background-color: $post-title-color;
         height: 2px;
         width: 0;
-        margin: -5px auto auto auto;
+        margin: -2px auto auto auto;
         transition:width 300ms;
         -moz-transition:width 300ms;
         -o-transition:width 300ms;
@@ -463,7 +490,9 @@
     -moz-transition:color 200ms,background-color 200ms;
     -o-transition:color 200ms,background-color 200ms;
     -webkit-transition:color 200ms,background-color 200ms;
-
+    &:visited{
+        color: $section-color-light;
+    }
     &:hover{
         background-color: $theme-color;
         color: $section-color-hover;
@@ -473,10 +502,25 @@
         -webkit-transition:color 200ms,background-color 200ms;
         text-decoration: none;
     }
-    &:visited{
-        color: $section-color-light;
+}
+
+
+#categories{
+    ul{
+        li{
+            ul{
+                padding:$spacing-unit;
+                background-color:$section-bgcolor;
+                border-radius:3px;
+                border:solid 1px $section-border-color;
+                max-height: 300px;
+                overflow: auto;
+                display: none;
+            }
+        }
     }
 }
+
 
 #contact{
     div{
@@ -523,22 +567,29 @@
     .content-text{
         li a{
             h1,h2,h3,h4,h5,h6{
-                font-size: 1rem;
                 margin-bottom: 0;
             }
+            h1{
+                font-size: 1.2rem;
+            }
             h2{
+                font-size: 1.1rem;
                 padding-left:1rem;
             }
             h3{
+                font-size: 1.0rem;
                 padding-left:2rem;
             }
             h4{
+                font-size: 0.9rem;
                 padding-left:3rem;
             }
             h5{
+                font-size: 0.8rem;
                 padding-left:4rem;
             }
             h6{
+                font-size: 0.7rem;
                 padding-left:5rem;
             }
         }
