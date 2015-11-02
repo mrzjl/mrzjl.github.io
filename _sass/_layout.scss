@@ -707,14 +707,32 @@
         display: block;
     }
     #ds-reset{
-        background-color:$section-bgcolor;
-        border:solid 1px $section-border-color;
-        border-radius:3px;
-        padding:$spacing-unit / 2;
+        background-color:$section-bgcolor!important;
+        border:solid 1px $section-border-color!important;
+        border-radius:3px!important;
+        padding:$spacing-unit / 2!important;
         .ds-replybox{
             form{
                 .ds-textarea-wrapper{
-                    border-radius:3px 3px 0 0;
+                    border: none!important;
+                    textarea{
+                        //box-sizing:border-box!important;
+                        //-moz-box-sizing:border-box!important;
+                        //-webkit-box-sizing:border-box!important;
+                        background: #sidebar-color!important;
+                        border: solid 2px $section-border-color-dark!important;
+                        border-radius: 3px!important;
+                        padding:8px!important;
+                        &:focus{
+                            border-color:$theme-color-light!important;
+                        }
+                    }
+                }
+                .ds-post-toolbar{
+                    box-shadow:none!important;
+                    .ds-post-options{
+                        border: none!important;
+                    }
                 }
             }
         }
@@ -735,6 +753,13 @@
                 background-color:$theme-color!important;
                 span{
                     color: $section-color-hover!important;
+                }
+            }
+        }
+        .ds-comments-info{
+            .ds-sort{
+                .ds-current{
+                    color: $theme-color!important;
                 }
             }
         }
