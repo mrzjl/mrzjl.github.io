@@ -552,6 +552,10 @@
                     }
                 }
             }
+// hide the fucking categorie list item
+            &:not(:first-child) ul li:first-child{
+                display: none;
+            }
         }
     }
 }
