@@ -72,18 +72,18 @@ function scrollToTop() {
 }
 
 
-/*滑动侧栏*/
+/*palm设备滑动侧栏*/
 function sidebarShow(){
     var sec=$(".secondary");
-    var secRight=$(".secondary").css("right");
-    var secWidth=$(".secondary").css("width");
+    var secRight=sec.css("right");
+    var secWidth=sec.css("width");
     $("#menu-icon").click(function(){
-        secRight=$(".secondary").css("right");
-        secWidth=$(".secondary").css("width");
+        secRight=sec.css("right");
+        secWidth=sec.css("width");
         if(secRight == "0px"){
-            $(".secondary").css("right","-"+secWidth);
+            sec.css("right","-"+secWidth);
         }else{
-                $(".secondary").css("right","0");            
+                sec.css("right","0");            
         }
     });
 
@@ -92,17 +92,18 @@ function sidebarShow(){
     //点击特定链接隐藏侧栏，如tag，锚链接等
     $("a","#content,#tags,#contact").click(function(){
         if( $("#menu-icon").css("display") == "block" ){
-            $(".secondary").css("right","-"+secWidth);
+            sec.css("right","-"+secWidth);
         }
     });
-    /*点击外部隐藏侧栏*/
+    //点击外部隐藏侧栏
     $("*",".primary").click(function(){
         if( $("#menu-icon").css("display") == "block" ){
-            $(".secondary").css("right","-"+secWidth);
+            sec.css("right","-"+secWidth);
         }
     });
-
 }
+
+
 
 /*post检索功能*/
 function searchPost(){

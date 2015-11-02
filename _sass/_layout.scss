@@ -285,7 +285,7 @@
 
 .entry-footer{
     padding:0 $spacing-unit / 2;
-    height: 48px;
+    min-height: 48px;
     background-color:$section-bgcolor;
     border-radius:3px;
     border:solid 1px $section-border-color;
@@ -298,6 +298,7 @@
         li{
             float: left;
         }
+        margin-bottom:0;
     }
     .post-meta{
         float: left;
@@ -322,6 +323,7 @@
             margin: 0 0.3em;
         }
     }
+    @extend %clearfix;
 }
 
 .pages-nav{
