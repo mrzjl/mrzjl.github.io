@@ -32,6 +32,8 @@ redcarpet:
 paginate: 5
 paginate_path: "pages/:num"
 
+imgrepo: "http://mr-jiale.github.io/images/img"
+images: "http://mr-jiale.github.io/images/"
 
 
 
