@@ -40,7 +40,7 @@ function smoothScroll(){
 function cateDisplay(){
     var cate=$(".cat-item");
     cate.click(function(){
-        /*这是什么鬼？
+        /*测试this
         for(var kk in this){
             console.log(kk);
             console.log(this[kk]);
@@ -87,8 +87,10 @@ function sidebarShow(){
         }
     });
 
-    /*点击侧栏内链接时隐藏侧栏,单击cat-item时不隐藏*/
-    $("a:not(.cat-item)",sec).click(function(){
+    //点击侧栏内链接时隐藏侧栏,单击cat-item时不隐藏
+    //$("a:not(.cat-item)",sec).click(function(){
+    //点击特定链接隐藏侧栏，如tag，锚链接等
+    $("a","#content,#tags,#contact").click(function(){
         if( $("#menu-icon").css("display") == "block" ){
             $(".secondary").css("right","-"+secWidth);
         }
@@ -123,7 +125,9 @@ function searchPost(){
     });
     
     $("#searchbox > input").blur(function(){
-        $(".search-results").slideUp(100);
+        setTimeout(function(){ //防止搜索结果的链接失效
+            $(".search-results").slideUp(100);
+        }, 100);
     });
 
     $("#searchbox > input").focus(function(){
