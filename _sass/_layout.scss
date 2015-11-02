@@ -733,13 +733,38 @@
                     .ds-post-options{
                         border: none!important;
                     }
+                    /*
+                    .ds-toolbar-buttons{
+                        .ds-toolbar-button{
+                            background-image:none!important;
+                            &:before{
+                                font-family: "octicons";
+                                text-align: center;
+                                font-size: 1em;
+                                color: $section-color;
+                            }
+                            &:hover{
+                                &:before{
+                                    color: $theme-color;
+                                }
+                            }
+                        }
+                        .ds-add-emote{
+                            content: ""
+                        }
+                        .ds-add-image{
+
+                        }
+                    }
+                    */
                 }
             }
         }
         .ds-post-button{
             background:$theme-color!important;
+            border-radius:3px!important;
             &:hover{
-                background:$theme-color-light!important;
+                box-shadow:0 0 10px 0px $theme-color!important;
             }
         }
         a.ds-like-thread-button {
