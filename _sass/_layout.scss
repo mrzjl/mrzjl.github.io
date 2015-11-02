@@ -732,8 +732,12 @@
                 }
                 .ds-post-toolbar{
                     box-shadow:none!important;
+                    margin-top: 8px!important;
                     .ds-post-options{
                         border: none!important;
+                        .ds-sync{
+                            margin-right:8px!important;
+                        }
                     }
                     /*
                     .ds-toolbar-buttons{
