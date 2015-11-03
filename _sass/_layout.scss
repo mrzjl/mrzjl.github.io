@@ -110,14 +110,18 @@
     @include media-query($on-palm) {
 
         #menu-icon {
+            content: "\F05E";
             display: block;
             float: right;
             width: 36px;
-            height: 26px;
-            line-height: 56px;
+            height: 32px;
+            margin-top:10px;
             text-align: center;
             color:$site-nav-color;
-
+            background:none;
+            border:none;
+            outline: medium;
+            font-size: 1.5rem;
             &:before{
                 content: "\F05E";
             }
@@ -125,7 +129,6 @@
                 color:$site-nav-color;
             }
             &:hover{
-                text-decoration:none;
                 color:$theme-color-light;
                 cursor: pointer;
             }
@@ -161,6 +164,7 @@
     border-radius:5px;
     background-color:$theme-color;
     opacity: 0.4;
+    z-index: 99;
     &:before{
         content: "\F03D";
         font-family: "octicons";
@@ -718,10 +722,7 @@
                 .ds-textarea-wrapper{
                     border: none!important;
                     textarea{
-                        //box-sizing:border-box!important;
-                        //-moz-box-sizing:border-box!important;
-                        //-webkit-box-sizing:border-box!important;
-                        background: #sidebar-color!important;
+                        background: $sidebar-color!important;
                         border: solid 2px $section-border-color-dark!important;
                         border-radius: 3px!important;
                         padding:8px!important;
