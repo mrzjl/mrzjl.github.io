@@ -97,12 +97,11 @@ function sidebarShow() {
         }
     });
     //点击外部隐藏侧栏
-    $("*", ".primary").click(function() {
+    $(".primary").click(function() {
         if ($("#menu-icon").css("display") == "block") {
             sec.css("right", "-" + secWidth);
         }
     });
-
 }
 
 
@@ -150,3 +149,17 @@ function searchPost() {
         }, 100);
     });
 }
+
+
+/*jQuery扩展生成瀑布流*/
+(function($) {
+    $.fn.waterfall = function(options) {
+        var defaults = {
+            foreground: 'red',
+            background: 'yellow'
+        };
+        var opts = $.extend(defaults, options);
+        $(this).css("background-color", opts.background);
+        $(this).css("color", opts.foreground);
+    };
+})(jQuery);
