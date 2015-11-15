@@ -1,11 +1,11 @@
 # Site settings
-title: Jiale's Blog
+title: TimeLess
 icon:	/images/site.ico
-email: zhangjialecn@gmail.com
+email: mr_jianlong@hotmail.com
 #description: Front-end Dev
 #baseurl: "" # the subpath of your site, e.g. /blog/
 #url: "http://yourdomain.com" # the base hostname & protocol for your site
-github_username:  mr-jiale
+github_username:  mrzjl
 
 # Build settings
 #markdown: kramdown
@@ -32,8 +32,8 @@ redcarpet:
 paginate: 5
 paginate_path: "pages/:num"
 
-imgrepo: "http://mr-jiale.github.io/images/img"
-images: "http://mr-jiale.github.io/images/"
+imgrepo: "http://mrzjl.github.io/images/img"
+images: "http://mrzjl.github.io/images/"
 
 
 
